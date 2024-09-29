@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="view_cost_price" model="res.groups">
+            <field name="name">View Cost Price</field>
+            <field name="users" eval="[(4, ref('base.user_root'))]"/>
+        </record>
+        
+        <!-- Grupo para ver el precio de venta (list_price) -->
+        <record id="view_sale_price" model="res.groups">
+            <field name="name">View Sale Price</field>
+            <field name="users" eval="[(4, ref('base.user_root'))]"/>
+        </record>
+    </data>
+</odoo>
